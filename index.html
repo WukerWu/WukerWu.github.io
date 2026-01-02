@@ -1,1 +1,269 @@
-hello Wuker, how is going on? 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My GitHub Insights</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Crimson+Text:wght@400;600&display=swap');
+    
+    body {
+      font-family: 'Crimson Text', serif;
+      background: linear-gradient(135deg, #f8f4e9 0%, #f0e9d9 100%);
+      background-attachment: fixed;
+    }
+    
+    .header-bg {
+      background: linear-gradient(rgba(101, 78, 53, 0.85), rgba(123, 93, 65, 0.9)), url('https://picsum.photos/1200/400?image=1060');
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
+    }
+    
+    .welcome-text {
+      font-family: 'Playfair Display', serif;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      letter-spacing: 2px;
+    }
+    
+    .vintage-card {
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid #d4c8b0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .vintage-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .quote-border {
+      border-left: 4px solid #8B4513;
+    }
+    
+    .ornamental-divider {
+      height: 2px;
+      background: repeating-linear-gradient(90deg, #8B4513, #8B4513 10px, transparent 10px, transparent 20px);
+    }
+    
+    footer {
+      background: linear-gradient(to right, #5D2906, #8B4513);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="header-bg text-amber-50 py-16 text-center">
+    <div class="container mx-auto px-4">
+      <h1 class="welcome-text text-5xl md:text-6xl font-bold mb-4">Welcome to My GitHub</h1>
+      <p class="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
+        A Collection of Thoughts, Projects, and Programming Passions
+      </p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+      <!-- Introduction Section -->
+      <section class="vintage-card rounded-xl p-8 mb-12">
+        <h2 class="text-3xl font-bold text-amber-900 mb-6 pb-3 border-b-2 border-amber-200">
+          <i class="fas fa-user mr-3"></i>About Me
+        </h2>
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+          <img src="https://picsum.photos/200/200?image=1084" alt="Profile picture of the GitHub user" class="w-32 h-32 rounded-full mx-auto md:mx-0 border-4 border-amber-200">
+          <div class="text-center md:text-left">
+            <p class="text-gray-700 text-lg leading-relaxed mb-4">
+              I am a passionate developer who believes in the power of open-source collaboration. 
+              With years of experience in various programming languages and technologies, 
+              I strive to create elegant solutions to complex problems.
+            </p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
+              <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
+                <i class="fab fa-python mr-2"></i>Python
+              </span>
+              <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
+                <i class="fab fa-js mr-2"></i>JavaScript
+              </span>
+              <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
+                <i class="fab fa-java mr-2"></i>Java
+              </span>
+              <span class="bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
+                <i class="fas fa-database mr-2"></i>SQL
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Philosophy Section -->
+      <section class="vintage-card rounded-xl p-8 mb-12">
+        <h2 class="text-3xl font-bold text-amber-900 mb-6 pb-3 border-b-2 border-amber-200">
+          <i class="fas fa-lightbulb mr-3"></i>My Philosophy
+        </h2>
+        <div class="quote-border pl-6 py-4 mb-6">
+          <p class="text-2xl italic text-gray-700">
+            "Code is poetry, and every commit tells a story of growth and discovery."
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+          <div class="bg-amber-50 p-6 rounded-lg border border-amber-100">
+            <h3 class="text-xl font-bold text-amber-800 mb-3 flex items-center">
+              <i class="fas fa-cogs mr-2"></i>Clean Code
+            </h3>
+            <p class="text-gray-700">
+              I believe in writing clean, maintainable code that speaks for itself. 
+              Every function should have a single responsibility and be easily understandable.
+            </p>
+          </div>
+          <div class="bg-amber-50 p-6 rounded-lg border border-amber-100">
+            <h3 class="text-xl font-bold text-amber-800 mb-3 flex items-center">
+              <i class="fas fa-users mr-2"></i>Community
+            </h3>
+            <p class="text-gray-700">
+              Open source is not just about code; it's about building a community. 
+              I actively contribute to projects and welcome collaboration from fellow developers.
+            </p>
+          </div>
+          <div class="bg-amber-50 p-6 rounded-lg border border-amber-100">
+            <h3 class="text-xl font-bold text-amber-800 mb-3 flex items-center">
+              <i class="fas fa-graduation-cap mr-2"></i>Continuous Learning
+            </h3>
+            <p class="text-gray-700">
+              Technology evolves rapidly, and staying curious is essential. 
+              I'm always exploring new frameworks, languages, and methodologies.
+            </p>
+          </div>
+          <div class="bg-amber-50 p-6 rounded-lg border border-amber-100">
+            <h3 class="text-xl font-bold text-amber-800 mb-3 flex items-center">
+              <i class="fas fa-balance-scale mr-2"></i>Quality First
+            </h3>
+            <p class="text-gray-700">
+              Rushing to deliver features often compromises quality. 
+              I advocate for thorough testing, code reviews, and sustainable development practices.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects -->
+      <section class="vintage-card rounded-xl p-8 mb-12">
+        <h2 class="text-3xl font-bold text-amber-900 mb-6 pb-3 border-b-2 border-amber-200">
+          <i class="fas fa-project-diagram mr-3"></i>Featured Projects
+        </h2>
+        <div class="space-y-6">
+          <!-- Project 1 -->
+          <div class="flex flex-col md:flex-row gap-6 p-4 hover:bg-amber-50 rounded-lg transition-colors">
+            <img src="https://picsum.photos/200/150?image=1069" alt="Screenshot of data visualization dashboard project" class="w-full md:w-48 h-36 object-cover rounded-lg">
+            <div class="flex-grow">
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">Data Visualization Dashboard</h3>
+              <p class="text-gray-600 mb-3">
+                An interactive dashboard built with React and D3.js for visualizing complex datasets. 
+                Features real-time updates and customizable chart components.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
+                <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">D3.js</span>
+                <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">Node.js</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="flex flex-col md:flex-row gap-6 p-4 hover:bg-amber-50 rounded-lg transition-colors">
+            <img src="https://picsum.photos/200/150?image=1025" alt="Screenshot of machine learning model interface" class="w-full md:w-48 h-36 object-cover rounded-lg">
+            <div class="flex-grow">
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">Machine Learning Toolkit</h3>
+              <p class="text-gray-600 mb-3">
+                A comprehensive toolkit for implementing and testing machine learning algorithms. 
+                Includes pre-processing utilities, model evaluation metrics, and visualization tools.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Python</span>
+                <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">Scikit-learn</span>
+                <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Pandas</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 3 -->
+          <div class="flex flex-col md:flex-row gap-6 p-4 hover:bg-amber-50 rounded-lg transition-colors">
+            <img src="https://picsum.photos/200/150?image=1040" alt="Screenshot of mobile application interface" class="w-full md:w-48 h-36 object-cover rounded-lg">
+            <div class="flex-grow">
+              <h3 class="text-2xl font-bold text-gray-800 mb-2">Task Management Mobile App</h3>
+              <p class="text-gray-600 mb-3">
+                A cross-platform mobile application for personal task management with real-time synchronization. 
+                Built with React Native and Firebase backend.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-sm">React Native</span>
+                <span class="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">Firebase</span>
+                <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Redux</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-8">
+          <a href="#" class="inline-block bg-amber-700 hover:bg-amber-800 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+            <i class="fab fa-github mr-2"></i>View All Projects on GitHub
+          </a>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="vintage-card rounded-xl p-8">
+        <h2 class="text-3xl font-bold text-amber-900 mb-6 pb-3 border-b-2 border-amber-200">
+          <i class="fas fa-envelope mr-3"></i>Get In Touch
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+          <div class="p-6 bg-amber-50 rounded-lg border border-amber-100">
+            <i class="fab fa-github text-4xl text-amber-700 mb-4"></i>
+            <h3 class="text-xl font-bold text-amber-800 mb-2">GitHub</h3>
+            <p class="text-gray-700">Explore my repositories and contributions</p>
+            <a href="#" class="block mt-3 text-amber-700 hover:text-amber-900 font-medium">@username</a>
+          </div>
+          <div class="p-6 bg-amber-50 rounded-lg border border-amber-100">
+            <i class="fab fa-linkedin-in text-4xl text-amber-700 mb-4"></i>
+            <h3 class="text-xl font-bold text-amber-800 mb-2">LinkedIn</h3>
+            <p class="text-gray-700">Connect with me professionally</p>
+            <a href="#" class="block mt-3 text-amber-700 hover:text-amber-900 font-medium">Profile Link</a>
+          </div>
+          <div class="p-6 bg-amber-50 rounded-lg border border-amber-100">
+            <i class="fas fa-comments text-4xl text-amber-700 mb-4"></i>
+            <h3 class="text-xl font-bold text-amber-800 mb-2">Email</h3>
+            <p class="text-gray-700">Reach out for collaborations</p>
+            <a href="#" class="block mt-3 text-amber-700 hover:text-amber-900 font-medium">email@example.com</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-amber-50 py-8 mt-12">
+    <div class="container mx-auto px-4 text-center">
+      <p class="mb-2">© 2026 My GitHub Portfolio. All Rights Reserved.</p>
+      <p class="text-amber-200">Crafted with passion and precision</p>
+      <div class="mt-4 flex justify-center space-x-4">
+        <a href="#" class="text-amber-200 hover:text-white text-xl">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="#" class="text-amber-200 hover:text-white text-xl">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="#" class="text-amber-200 hover:text-white text-xl">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="text-amber-200 hover:text-white text-xl">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
